@@ -1,18 +1,5 @@
 defmodule SimplyValidate do
-  @moduledoc """
-  Documentation for SimplyValidate.
-  """
+  alias SimplyValidate.Validation
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> SimplyValidate.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defdelegate validate(data, validators), to: Validation
 end
