@@ -23,3 +23,5 @@ jobs:
           runs-on: ubuntu-latest
       - name: List directory contents
         run: elixir -e 'File.ls!() |> IO.inspect()'
+      - name: List env
+        run: env
