@@ -20,8 +20,5 @@ jobs:
           # Version range or exact version of Elixir to use
           elixir-version: 1.9
           runs-on: ubuntu-latest
-      - uses: actions/labeler@v2
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: List directory contents
         run: elixir -e 'File.ls!() |> IO.inspect()'
